@@ -141,6 +141,12 @@
             const act = document.getElementById('act').value;
             const preferredSchool = document.getElementById('preferredSchool').value;
 
+            // Check if all fields are filled out
+            if (!firstName || !lastName || !gpa || !grade || !rank || !preferredSchool) {
+                alert('Please fill out all fields before submitting.');
+                return;
+            }
+
             // Create a new instance of the Student class
             const newStudent = new Student(firstName, lastName, gpa, grade, rank, sat, act, preferredSchool);
 
