@@ -184,18 +184,19 @@
                 if (isGPAInRange) {
                     reportMessage.textContent = 'CONGRATS! You meet the criteria.';
                     reportMessage.classList.add('congrats-message');
-                    satPrepButton.style.display = 'none'; // Hide SAT Prep button if criteria are met
-                    classHelpButton.style.display = 'none'; // Hide Class Help button if criteria are met
+                    satPrepButton.style.display = 'none'; 
+                    classHelpButton.style.display = 'none'; 
                 } else {
                     const closestGPA = getClosestToTarget(student.gpa, matchingUniversity.preferedGPA);
                     const closestGPARequirement = closestGPA >= matchingUniversity.preferedGPA[0]
                         ? `a ${closestGPA}`
                         : `an ${closestGPA}`;
 
-                    reportMessage.textContent = `DENIED! As it stands, you need to improve your GPA. You have ${student.gpa}, and ${matchingUniversity.name} requires ${closestGPARequirement}. Here are some resources to help you improve your chances of being accepted.`;
+                    reportMessage.textContent = `DENIED! As it stands, you need to improve your GPA. You have ${student.gpa}, and ${matchingUniversity.name} requires ${closestGPARequirement}. Here are some resources to help you improve your chances of being accepted.
+                                                 Here are some alternative schools you can attend: Talladega, SU, FM, KSU, ASU`;
                     reportMessage.classList.add('denied-message');
-                    satPrepButton.style.display = 'block'; // Show SAT Prep button if GPA criteria are not met
-                    classHelpButton.style.display = 'block'; // Show Class Help button if GPA criteria are not met
+                    satPrepButton.style.display = 'block'; 
+                    classHelpButton.style.display = 'block'; 
                 }
             } else {
                 const closestSAT = getClosestToTarget(student.sat, matchingUniversity.preferedSAT);
@@ -203,17 +204,18 @@
                     ? `a ${closestSAT}`
                     : `an ${closestSAT}`;
 
-                reportMessage.textContent = `DENIED! As it stands, you need to improve your SAT score. You have ${student.sat}, and ${matchingUniversity.name} requires ${closestSATRequirement}. Here are some resources to help you improve your SAT score.`;
+                reportMessage.textContent = `DENIED! As it stands, you need to improve your SAT score. You have ${student.sat}, and ${matchingUniversity.name} requires ${closestSATRequirement}. Here are some resources to help you improve your SAT score.
+					     Here are some alternative schools you can attend: Talladega, SU, FM, KSU, ASU`;
                 reportMessage.classList.add('denied-message');
-                satPrepButton.style.display = 'block'; // Show SAT Prep button if SAT criteria are not met
-                classHelpButton.style.display = 'block'; // Show Class Help button if SAT criteria are not met
+                satPrepButton.style.display = 'block'; 
+                classHelpButton.style.display = 'block'; 
             }
 
-            // Show the report container
+            
             document.getElementById('reportContainer').style.display = 'block';
         }
 
-        // Function to find the closest value in an array to the target
+        
         function getClosestToTarget(target, arr) {
             return arr.reduce((prev, curr) => Math.abs(curr - target) < Math.abs(prev - target) ? curr : prev);
         }
