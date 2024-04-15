@@ -1,66 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+<meta name="description" content="" >
+<meta name="author" content="Dr3am T3am" >
 <head>
-    <title>Landing Page</title>
-    <style>
-        body {
-            display: flex;
-            background: linear-gradient(135deg, #3494E6 0%, #EC6EAD 100%);
-            color: #000;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .image-half {
-            background-image: url('https://static.wixstatic.com/media/9cfe23_f98e6ec4ff4e44e0be9ec40d76c92b4b~mv2.png/v1/fill/w_540,h_406,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9cfe23_f98e6ec4ff4e44e0be9ec40d76c92b4b~mv2.png');
-            background-size: cover;
-            background-position: center;
-            flex: 2; 
-            height: 100vh;
-        }
-
-        .info-half {
-            flex: 1;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 36px;
-            text-align: center;
-        }
-
-        #createProfileButton {
-            display: block;
-            margin: 20px auto;
-            padding: 15px 30px;
-            font-size: 18px;
-            background-color: #3494E6;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .explanation {
-            font-size: 18px;
-            text-align: center;
-        }
-    </style>
+    <title>Dreamer's Initiative</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" >
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" >
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" >
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
 </head>
-<body>
-    <div class="image-half"></div>
-    <div class="info-half">
-        <h1>Welcome to our website!</h1>
-        <p class="explanation">Curious about what you need to do to get into your dream school or what alternatives are out there if you don't get accepted. 
-                               Our website helps you figure out what you need to do to get into the college of your choice. 
-				Simply click the "Create Profile" button and answer the prompts and we'll generate a report on 
-                               	what you need to do to have the best chances of being accepted. We'll also provide you with resources to help 
-				improve your Test scores and grades to have a greater chance of being accepted into your dream school. 
-                                      </p>
-        <button id="createProfileButton">Create Profile</button>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-2">
+            <a class="navbar-brand" href="#page-top">
+                <div class="logo-image">
+                    <img src="assets/DreamersLogoCloud.png" class="img-fluid pe-2"><span class="pe-4 pt-4 h4">Dreamer's Initiative</span>
+                </div>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#page-top">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Meet the T3am</a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html">Create Profile</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-white font-weight-bold">Dreamer's Initiative</h1>
+                    <hr class="divider" >
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 mb-5"> 
+                        Discover how to secure admission to your Dream School or explore alternative paths 
+                        if acceptance isn't guaranteed. Our website guides you through the steps necessary 
+                        for college admission. Click "Create Profile," answer prompts, and receive a 
+                        personalized report outlining your best chances of acceptance. Additionally, 
+                        access resources to enhance test scores and grades, boosting your prospects for 
+                        admission to your Dream School. </p>
+                <div class="btn-primary">
+                    <button class="btn" id="createProfileButton">Create Profile</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="portfolio">
+            <div class="container-fluid p-4">
+                <h2 class="text-center pt-4 mt-0">The Dr3am T3am</h2>
+                <hr class="divider" >
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="portfolio-box" href="assets/img/team/1.png" onclick="window.open('https://www.linkedin.com/in/krystal-moore-gayle/', '_blank')">
+                            <img class="img-fluid" src="assets/img/team/1.png" alt="..." >
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white">T3am Member</div>
+                                <div class="project-name">Krystal Moore-Gayle</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="portfolio-box" href="assets/img/team/2.png" onclick="window.open('https://www.linkedin.com/in/jamiapatrick/', '_blank')">
+                            <img class="img-fluid" src="assets/img/team/2.png" alt="..." >
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white">T3am Member</div>
+                                <div class="project-name">Jamia Patrick</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="portfolio-box" href="assets/img/team/3.png" onclick="window.open('https://www.linkedin.com/in/briannawyer/', '_blank')">
+                            <img class="img-fluid" src="assets/img/team/3.png" alt="..." >
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white">T3am Member</div>
+                                <div class="project-name">Brianna Wyer</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-3">
+                        <a class="portfolio-box" href="assets/img/team/4.png" onclick="window.open('https://www.linkedin.com/in/dilly-jean-jacques/', '_blank')">
+                            <img class="img-fluid" src="assets/img/team/4.png" alt="..." >
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white">T3am Member</div>
+                                <div class="project-name">Dilly Jean Jacques</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
     <script>
         document.getElementById('createProfileButton').addEventListener('click', () => {
             window.location.href = 'profile.html';

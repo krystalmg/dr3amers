@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "dr3amers",
+			"path": "."
+		},
+		{
+			"name": "startbootstrap-creative-gh-pages",
+			"path": "../../../OneDrive/Desktop/CIS4004-A1/startbootstrap-creative-gh-pages"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dr3amers"
+	}
+}
