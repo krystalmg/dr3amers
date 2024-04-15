@@ -56,4 +56,9 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
+    // Link Profile page to Create Profile Button
+    document.getElementById('createProfileButton').addEventListener('click', () => {
+        window.location.href = 'profile.html';
+    });
+
 });
